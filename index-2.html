@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>German Vocabulary Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz">
+
+    <!-- Start screen -->
+    <div id="start-screen" class="screen">
+      <h1>German Vocabulary Quiz</h1>
+      <p class="screen__text">Test your German vocabulary with 10 quick questions.</p>
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz screen -->
+    <div id="quiz-screen" class="screen is-hidden">
+      <div class="quiz__top">
+        <span id="question-counter" class="quiz__counter">Question 1/10</span>
+        <span id="score-display" class="quiz__score">Score: 0</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-bar__fill"></div>
+      </div>
+
+      <h2 id="question-text" class="quiz__question"></h2>
+
+      <div id="answers" class="answers"></div>
+
+      <button id="next-btn" class="btn btn--secondary is-hidden">Next Question</button>
+    </div>
+
+    <!-- Result screen -->
+    <div id="result-screen" class="screen is-hidden">
+      <h1>Quiz Finished!</h1>
+      <p id="final-score" class="screen__score"></p>
+      <p id="final-message" class="screen__text"></p>
+      <button id="restart-btn" class="btn">Try Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
